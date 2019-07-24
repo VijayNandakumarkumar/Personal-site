@@ -1,6 +1,11 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const markdownPlugin = require('markdown-html-webpack-plugin');
+const marked = require('marked');
+const fs = require('fs');
+
+const readFileContents = (filePath) => fs.readFileSync(path.join(__dirname, filePath), 'utf8');
 
 const extractPlugin = new ExtractTextPlugin({
     filename: 'main.css'
@@ -50,7 +55,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             hash: true,
             title: 'Vijay App',
-            bodycontent: "Hello Vijay",
+            bodycontent: marked(readFileContents('./src/index.md')),
             template: './src/index.html',
             filename: 'index.html'
         })
