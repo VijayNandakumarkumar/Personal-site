@@ -1,0 +1,10 @@
+@import 'colors';
+#bt1 {
+    background-color: $orangered;
+    border: 2px solid $green;
+    cursor: pointer;
+}
+
+#para {
+    border: 2px dotted $green;
+}
