@@ -1,2 +1,3 @@
-# Personal-sitesdsa
-This is my personal website, using Vanilla, Sass, Webpack, Ejs, Gulp.
+# Personal-site
+  Resume will be updated soon...
+
