@@ -1,8 +1,9 @@
 import { button, para } from './dom';
-import { style } from "../css/main.scss";
+// import { style } from "../css/main.scss";
+import { style } from "../scss/app.scss";
 
 function change_paracontent() {
-    // console.log("para", para.textContent);
+    console.log("para", para.textContent);
     para.textContent = "An example of html template generation";
 }
 

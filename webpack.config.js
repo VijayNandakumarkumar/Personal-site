@@ -10,12 +10,47 @@ const readFileContents = (filePath) => fs.readFileSync(path.join(__dirname, file
 const extractPlugin = new ExtractTextPlugin({
     filename: 'main.css'
 });
+
+const createHtmlFiles = (templateFileName, bodyContent) => {
+    const filename = templateFileName.split('.')[0];
+    return new HtmlWebpackPlugin({
+        filename: `${filename}.html`,
+        template: path.resolve(__dirname, `./src/pages/${filename}.html`),
+        templateParameters: {
+            title: "Hello Vijay",
+            content: bodyContent,
+            header: readFileContents("./src/partials/header.html"),
+            footer: readFileContents("./src/partials/footer.html")
+        },
+        meta: {
+            "language": "English",
+            "charset": "utf-8",
+            "viewport": "width=device-width, initail-scale=1",
+            "theme-color": "#d50000",
+            "keywords": "vijay, theVijay_, theVijay, web, full-stack, android, research, research-developer, programming-language, developer, india, chennai",
+            "robots": "index",
+            "article:author": "Vijaykumar"
+        }
+    })
+}
+
+function generate_all_pages(dirPath) {
+    const pathName = path.resolve(__dirname, dirPath);
+    const templateFiles = fs.readdirSync(pathName);
+    const htmlFiles = templateFiles.filter(filename => /\.html$/.test(filename));
+    const mdFiles = templateFiles.filter(filename => /\.md$/.test(filename));
+    return htmlFiles.map(filename => createHtmlFiles(filename, null)).concat(
+        mdFiles.map(filename => createHtmlFiles(
+            filename, marked(readFileContents(path.join(dirPath, filename)))
+        )));
+}
+
 module.exports = {
     entry: './src/js/app.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
-        publicPath: '/dist'
+        // publicPath: '/dist'
     },
     module: {
         rules: [{
@@ -52,12 +87,13 @@ module.exports = {
     },
     plugins: [
         extractPlugin,
-        new HtmlWebpackPlugin({
-            hash: true,
-            title: 'Vijay App',
-            bodycontent: marked(readFileContents('./src/index.md')),
-            template: './src/index.html',
-            filename: 'index.html'
-        })
+        ...generate_all_pages('./src/pages')
+        // new HtmlWebpackPlugin({
+        //     hash: true,
+        //     title: 'Vijay App',
+        //     bodycontent: marked(readFileContents('./src/pages/index.md')),
+        //     template: './src/pages/index.html',
+        //     filename: 'index.html'
+        // })
     ]
 };

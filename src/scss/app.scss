@@ -1,0 +1,126 @@
+@import "all.scss";
+@import url("https://fonts.googleapis.com/css?family=Oxygen+Mono&display=swap&&effect=anaglyph");
+body {
+    background: $frostywhite;
+    font-family: "Oxygen Mono", monospace;
+}
+
+header {
+    background: $dark-pink;
+}
+
+nav {
+    top: 0;
+    width: 100%;
+    background: $dark-pink;
+    ul {
+        list-style: none;
+        li {
+            display: inline-block;
+            a {
+                display: block;
+                padding: $nav_item_top_bottom_padding $nav_item_left_right_padding;
+                font-size: 18px;
+                color: $white;
+                text-decoration: none;
+                &:hover {
+                    background: $dark-red;
+                    border-bottom: $nav_item_bottom_border_height solid $white;
+                    padding-bottom: $nav_item_top_bottom_padding - $nav_item_bottom_border_height;
+                }
+            }
+        }
+    }
+}
+
+#content {
+    padding: $page_padding;
+    margin: $page_top_margin auto 0 auto;
+    @include respond-to(wide-screens) {
+        max-width: $max_content_width;
+    }
+    h1 {
+        font-size: 38px;
+        color: $black;
+        font-weight: bolder;
+    }
+    h2 {
+        font-size: 28px;
+        color: $dark-pink;
+        font-weight: bold;
+    }
+    h3 {
+        font-size: 24px;
+        color: $black;
+        font-weight: normal;
+        margin: 32px 0 0 0;
+    }
+    h4 {
+        font-size: 20px;
+        color: $black;
+        font-weight: normal;
+        margin: 4px 0 0 0;
+    }
+    h5 {
+        font-size: 16px;
+        color: $darkred;
+        font-weight: bold;
+        margin: 0;
+    }
+    ol {
+        @include respond-to(medium-and-small-screens) {
+            margin: 0 16px;
+        }
+        hr {
+            border-style: dashed;
+        }
+    }
+    ul {
+        li {
+            font-size: 18px;
+            margin: 16px;
+            list-style-type: square;
+            line-height: 150%;
+        }
+    }
+    p {
+        line-height: 150%;
+        margin: 8px 0 16px;
+        font-size: 18px;
+    }
+    a {
+        text-decoration: underline;
+        color: $black;
+        text-decoration-color: $darkred;
+        &:hover {
+            background: $darkred;
+            color: $white;
+        }
+    }
+    hr {
+        border-color: $darkred;
+    }
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    margin: $page_top_margin 0 $page_bottom_margin 0;
+    justify-content: center;
+    bottom: 0;
+}
+
+#social {
+    a {
+        text-align: center;
+        background: $dark-pink;
+        text-decoration: none;
+        color: $white;
+        display: inline-block;
+        padding: 12px;
+        margin: 4px 0;
+        &:hover {
+            background: $dark-red;
+        }
+    }
+}
