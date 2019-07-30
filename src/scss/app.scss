@@ -35,7 +35,7 @@ nav {
 
 #content {
     padding: $page_padding;
-    margin: $page_top_margin auto 0 auto;
+    margin: $page_top_margin auto auto auto;
     @include respond-to(wide-screens) {
         max-width: $max_content_width;
     }
@@ -67,14 +67,14 @@ nav {
         font-weight: bold;
         margin: 0;
     }
-    ol {
-        @include respond-to(medium-and-small-screens) {
-            margin: 0 16px;
-        }
-        hr {
-            border-style: dashed;
-        }
-    }
+    // ol {
+    //     @include respond-to(medium-and-small-screens) {
+    //         margin: 0 16px;
+    //     }
+    //     hr {
+    //         border-style: dashed;
+    //     }
+    // }
     ul {
         li {
             font-size: 18px;
