@@ -1,4 +1,4 @@
-<!-- # Vijaykumar
+# Vijaykumar
 
 ## Mobile & Web Developer, Software Research Developer and Designer(Language construct including compilers and UI), 
 
@@ -12,32 +12,50 @@ I can communicate fluently in English and work closely with the team, motivate a
 ------------------
 ## Experience
 1. ### **Member Technical Staff** at **Zoho Corp** 
-   #### **JUN, 2016 - Jul, 2018** | Chennai, TN, India
-    - Built the Single Sign On (SSO) library from scratch which is used by 50+ Zoho apps to onboard millions of users.
-    - Built an SDK with which 3rd party apps can provide "Sign in with Zoho" option and published it to Maven.
-    - Helped teams to adopt OAuth2 and SSO for their Android apps .
-    - Advocated and Drove the team to adopt Kotlin and Room early.
-    - Co-Developed OneAuth and MyZoho which boast 100,000+ downloads on Playstore.
+   #### **JUN, 2016 - Present** | Chennai, TN, India
+    - Co-Developed an in-house programming language called PALI, and Developed the run-time and parser for it using C and Golang.
+    - Developed a web-app called ZAsk (a Q&A forum) using AngularJs, CSS, Html, Bootstrap, using Pali as the backend and used       PostgreSQL and Mongo DB for the data store
+    - Using WASM converted the typescript to wasm modules thereby enabling high performance of the web application.
+    - Coded light-weight libraries, as a replacement for heavy third-party libraries, thereby decreasing the processing time.
+    - Coded a Transpiler (Converting from base Pali code to C code). Developed Transpiler for converting the base Pali code to      Equivalent Swift and Kotlin code by mentoring a team of interns and newbies.
+    - Made the web app cross-plaform compatible, which boast the users from 1000 to 10000+ for the site.
    ------------------------
    
-1. ### **Freelance Developer** at **Smart iApps** 
-   #### **JUN, 2014 - JAN, 2016** | Oslo, Norway
-    - Designed and developed an Android application that showcases and provides audio walkthrough for all the arts exhibited in a Norwegian Museum.
-    - Developed an Android application that allows users to order food online.
-    - Developed a Web application to monitor billing for a restaurant.
+1. ### **Software Engineer** at **EmberUr Systems** 
+   #### **JUN, 2014 - JAN, 2016** | Chennai, TN, India
+    - Developed multiple user login and access feature and maintained the website for access the modem using Java, JSP, jQuery,     AJAX, HTML, PHP and CSS.
+    - Co-Developed the software (Operating System features) for Arris modems using C.
+    - Developed a back-end feature by making the ARM and ATOM processors of the modem to communicate and transfer data between      them using RPC. 
+   ------------------------
+
+1. ### **Intern** at **Wity**
+   #### **JULY, 2016 - SEPT, 2016** | Chennai, TN, India
+    - Built two web applications for the firm.
+    - Built the first site using vanilla js, servlets, css.
+    - Built the second website using wordpress.
+    - Both the products were sold to customers, thereby profiting the firm.
+   ------------------------
+
+1. ### **Freelance Developer** at **5D Minds**
+    #### **AUG, 2017 - DEC, 2017** | Chennai, TN, India
+     - Built a complete web application called mysmarttest.com for the startup.
+     - Revamped the site to get rid of security vulnerabilities.
+     - Hosted the site in AWS(Elastic Beanstalk).
+     - Designed the entire site very intuitive and cross platform compatible, which made multiple colleges as customers for the firm.
 ----------------------
 ## Skills
+- Mobile application development
 - Android application development
-- Java, Kotlin, Python, RxJava
+- Language and compiler design and development
+- Java, Kotlin, Python, RxJava, C, GoLang
 - Javascript, Sass
-- Flutter
-- SQLite, RoomY
-
+- SQLite, RoomY, PostgreSql, MongoDB
 - AngularJs
+- ReactJs
 - Webpack
 -------------------
 ## Education
-- **SRM Easwari Engineering College**, Chennai — BE, 2017
-- **Bell School**, Tirunelveli — 12th, 2013 -->
+- **SRM Easwari Engineering College**, Chennai — BE, 2018
+- **Nsn Group Of Schools**, Chennai — 12th, 2014
 
-## Resume Will be updated soon...
+<!-- ## Resume Will be updated soon... -->

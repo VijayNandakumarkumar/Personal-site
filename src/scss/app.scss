@@ -67,14 +67,14 @@ nav {
         font-weight: bold;
         margin: 0;
     }
-    // ol {
-    //     @include respond-to(medium-and-small-screens) {
-    //         margin: 0 16px;
-    //     }
-    //     hr {
-    //         border-style: dashed;
-    //     }
-    // }
+    ol {
+        @include respond-to(medium-and-small-screens) {
+            margin: 0 16px;
+        }
+        hr {
+            border-style: dashed;
+        }
+    }
     ul {
         li {
             font-size: 18px;
