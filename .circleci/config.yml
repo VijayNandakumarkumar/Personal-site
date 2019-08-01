@@ -107,7 +107,6 @@ workflows:
             - build
       - upload_artifacts:
           requires:
-            - build
 #       - deploy_staging:
 #           requires:
 #             - build
