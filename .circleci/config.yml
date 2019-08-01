@@ -90,7 +90,7 @@ jobs:
       - run:
           name: Installing netlify
           command: npm -i -g install netlify
-      -run:
+      - run:
           name: Installing netlify cli
           command: npm -i -g install netlify-cli
       -run:
