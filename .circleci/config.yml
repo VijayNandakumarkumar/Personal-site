@@ -88,6 +88,12 @@ jobs:
       - attach_workspace:
           at: .
       - run:
+          name: Installing netlify
+          command: npm -i -g install netlify
+      - run:
+          name: Installing netlify cli
+          command: npm -i -g install netlify-cli
+      - run:
           name:  Deploying to staging
           command: |
                     netlify deploy -p --dir=dist
@@ -101,10 +107,9 @@ workflows:
             - build
       - upload_artifacts:
           requires:
-            - build
-      - deploy_staging:
-          requires:
-            - build
+#       - deploy_staging:
+#           requires:
+#             - build
           filters:
             branches:
               only: dev
