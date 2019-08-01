@@ -124,3 +124,22 @@ footer {
         }
     }
 }
+
+#resume_on_request {
+    display: flex;
+    justify-content: center;
+    a {
+        text-align: center;
+        background: $dark-pink;
+        color: $white;
+        text-decoration: none;
+        display: inline-block;
+        flex-wrap: wrap;
+        padding: 12px;
+        margin: $page_top_margin 0 $page_bottom_margin 0;
+        &:hover {
+            background: $darkred;
+            color: $white;
+        }
+    }
+}
