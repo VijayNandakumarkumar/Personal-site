@@ -93,7 +93,7 @@ jobs:
       - run:
           name: Installing netlify cli
           command: npm -i -g install netlify-cli
-      -run:
+      - run:
           name:  Deploying to staging
           command: |
                     netlify deploy -p --dir=dist
