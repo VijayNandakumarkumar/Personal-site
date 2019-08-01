@@ -107,10 +107,9 @@ workflows:
             - build
       - upload_artifacts:
           requires:
-            - build
-      # - deploy_staging:
-      #     requires:
-      #       - build
+#       - deploy_staging:
+#           requires:
+#             - build
           filters:
             branches:
               only: dev
