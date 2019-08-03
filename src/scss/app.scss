@@ -3,10 +3,60 @@
 body {
     background: $frostywhite;
     font-family: "Oxygen Mono", monospace;
+    height: 100vh;
 }
 
 header {
     background: $dark-pink;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    padding: 0 3rem;
+    @include respond-to(medium-and-small-screens) {
+        padding: 0 1rem;
+    }
+    h1 {
+        font-size: 3.5rem;
+        font-weight: 200;
+        margin: 0.4rem;
+        color: #C1272D;
+        @include respond-to(wide-screens) {
+            font-size: $max_font_size;
+        }
+        @include respond-to(medium-and-small-screens) {
+            font-size: $med_small_font_size;
+        }
+        @include respond-to(medium-screens) {
+            font-size: $med_font_size;
+        }
+    }
+    h2 {
+        font-weight: 200;
+        font-size: 2rem;
+        color: #000;
+        margin: 0.4rem;
+        @include respond-to(medium-screens) {
+            font-size: 1.5rem;
+        }
+    }
+    .txt-typ {
+        .txt {
+            border-right: 0.2rem solid $dark-pink;
+        }
+    }
+    @keyframes blink-caret {
+        to,
+        from {
+            border-color: transparent;
+        }
+        50% {
+            border-color: $dark-pink;
+        }
+    }
 }
 
 nav {
