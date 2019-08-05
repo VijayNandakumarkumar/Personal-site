@@ -4,6 +4,7 @@ body {
     background: $frostywhite;
     font-family: "Oxygen Mono", monospace;
     height: 100vh;
+    // overflow: hidden;
 }
 
 header {
@@ -16,7 +17,9 @@ header {
     flex-direction: column;
     height: 100%;
     padding: 0 3rem;
+    cursor: pointer;
     @include respond-to(medium-and-small-screens) {
+        height: 90%;
         padding: 0 1rem;
     }
     h1 {

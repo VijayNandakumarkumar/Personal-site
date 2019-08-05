@@ -17,7 +17,7 @@ const createHtmlFiles = (templateFileName, bodyContent) => {
         filename: `${filename}.html`,
         template: path.resolve(__dirname, `./src/pages/${filename}.html`),
         templateParameters: {
-            title: "Hello Vijay",
+            title: "Vijaykumar",
             content: bodyContent,
             header: readFileContents("./src/partials/header.html"),
             footer: readFileContents("./src/partials/footer.html")

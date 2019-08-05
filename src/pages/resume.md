@@ -1,6 +1,6 @@
 # Vijaykumar
 
-## Mobile & Web Developer, Software Research Developer and Designer(Language construct including compilers and UI), 
+## Mobile & Web Developer, Software Research Engineer. 
 
 I’m an enthusiastic and industrious programmer and a Self-taught Software developer with colossal interest in Web and Mobile Applications development and in Compiler design.
 
