@@ -13,12 +13,10 @@ I can communicate fluently in English and work closely with the team, motivate a
 ## Experience
 1. ### **Member Technical Staff** at **Zoho Corp** 
    #### **JUN, 2016 - Present** | Chennai, TN, India
-    - Co-Developed an in-house programming language called PALI, and Developed the run-time and parser for it using C and Golang.
-    - Developed a web-app called ZAsk (a Q&A forum) using AngularJs, CSS, Html, Bootstrap, using Pali as the backend and used       PostgreSQL and Mongo DB for the data store
-    - Using WASM converted the typescript to wasm modules thereby enabling high performance of the web application.
+    - Worked in Zoho's R and D team.
     - Coded light-weight libraries, as a replacement for heavy third-party libraries, thereby decreasing the processing time.
-    - Coded a Transpiler (Converting from base Pali code to C code). Developed Transpiler for converting the base Pali code to      Equivalent Swift and Kotlin code by mentoring a team of interns and newbies.
-    - Made the web app cross-plaform compatible, which boast the users from 1000 to 10000+ for the site.
+    - Using WASM converted the typescript to wasm modules thereby enabling high performance required.
+    - Worked with compilers.
    ------------------------
    
 1. ### **Software Engineer** at **EmberUr Systems** 
