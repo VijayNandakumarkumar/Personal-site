@@ -71,15 +71,16 @@ I can communicate fluently in English and work closely with the team, motivate a
 
 ## Skills
 
-- Mobile application development
-- Android application development
-- Language and compiler design and development
-- Java, Kotlin, Python, RxJava, C, GoLang
-- Javascript, Sass
-- SQLite, RoomY, PostgreSql, MongoDB
-- AngularJs
-- ReactJs
-- Webpack
+- Mobile application development.
+- Android application development.
+- Language and compiler design and development.
+- Java, Kotlin, Python, RxJava, C, GoLang.
+- Javascript, Sass.
+- SQLite, RoomY, PostgreSql, MongoDB.
+- AngularJs.
+- ReactJs.
+- Webpack.
+- Flutter - learning.
 
 ---
 
