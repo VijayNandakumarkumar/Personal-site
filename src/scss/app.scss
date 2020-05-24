@@ -4,6 +4,7 @@ body {
     background: $frostywhite;
     font-family: "Oxygen Mono", monospace;
     height: 100vh;
+    cursor: pointer;
 }
 
 header {
@@ -23,7 +24,7 @@ header {
         font-size: 3.5rem;
         font-weight: 200;
         margin: 0.4rem;
-        color: #C1272D;
+        color: #c1272d;
         @include respond-to(wide-screens) {
             font-size: $max_font_size;
         }

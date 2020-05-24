@@ -1,16 +1,16 @@
-import { button, para } from './dom';
+import { button, para } from "./dom";
 // import { style } from "../css/main.scss";
 import { style } from "../scss/app.scss";
 
 const TypeWriter = function(textElement, textwords, wait = 3000) {
     this.textElement = textElement;
     this.textwords = textwords;
-    this.txt = '';
+    this.txt = "";
     this.wordIndex = 0;
     this.wait = parseInt(wait, 10);
     this.type();
     this.isDeleting = false;
-}
+};
 
 TypeWriter.prototype.type = function() {
     const current = this.wordIndex % this.textwords.length;
@@ -22,7 +22,7 @@ TypeWriter.prototype.type = function() {
         this.txt = fullText.substring(0, this.txt.length + 1);
     }
 
-    this.textElement.innerHTML = `<span class="txt" id="cursor">${this.txt}</span>`
+    this.textElement.innerHTML = `<span class="txt" id="cursor">${this.txt}</span>`;
 
     let typeSpeed = 300;
 
@@ -33,7 +33,7 @@ TypeWriter.prototype.type = function() {
     if (!this.isDeleting && this.txt === fullText) {
         typeSpeed = this.wait;
         this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === '') {
+    } else if (this.isDeleting && this.txt === "") {
         this.isDeleting = false;
         this.wordIndex++;
         typeSpeed = 500;
@@ -41,20 +41,23 @@ TypeWriter.prototype.type = function() {
     if (this.txt != "Developer") {
         myvar = setTimeout(() => this.type(), typeSpeed);
     } else {
-        document.querySelector(".txt").style.animation = "blink-caret .75s step-end infinite";
+        document.querySelector(".txt").style.animation =
+            "blink-caret .75s step-end infinite";
+        setTimeout(function() {
+            window.location.href = "index1.html";
+        }, 3000);
         window.addEventListener("click", function(event) {
             window.location.href = "index1.html";
         });
     }
-}
+};
 
-
-document.addEventListener('DOMContentLoaded', init);
+document.addEventListener("DOMContentLoaded", init);
 
 function init() {
-    const textElemment = document.querySelector('.txt-typ');
-    const words = JSON.parse(textElemment.getAttribute('data-words'));
-    const wait = textElemment.getAttribute('data-wait');
+    const textElemment = document.querySelector(".txt-typ");
+    const words = JSON.parse(textElemment.getAttribute("data-words"));
+    const wait = textElemment.getAttribute("data-wait");
 
     new TypeWriter(textElemment, words, wait);
 }
